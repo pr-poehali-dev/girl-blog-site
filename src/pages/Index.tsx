@@ -97,7 +97,7 @@ const Index = () => {
                 <img 
                   src="https://cdn.poehali.dev/files/524dbb6a-f836-449e-b936-e0fa4d6cd94c.png" 
                   alt="Аделина Арден" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
               <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2">
