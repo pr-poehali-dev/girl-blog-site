@@ -81,8 +81,13 @@ const Index = () => {
               >
                 Обо мне
               </a>
+              <a
+                href="/blog"
+                className="font-body text-gray-600 hover:text-instagram-pink transition-colors"
+              >
+                Блог
+              </a>
               {[
-                { id: 'blog', label: 'Блог' },
                 { id: 'gallery', label: 'Фото' },
                 { id: 'contacts', label: 'Контакты' },
                 { id: 'collab', label: 'Сотрудничество' }
@@ -209,10 +214,12 @@ const Index = () => {
           </div>
 
           <div className="text-center mt-12">
-            <Button variant="outline" size="lg" className="border-instagram-pink text-instagram-pink hover:bg-instagram-pink hover:text-white">
-              Смотреть все посты
-              <Icon name="ArrowRight" className="ml-2" size={20} />
-            </Button>
+            <a href="/blog">
+              <Button variant="outline" size="lg" className="border-instagram-pink text-instagram-pink hover:bg-instagram-pink hover:text-white">
+                Смотреть все посты
+                <Icon name="ArrowRight" className="ml-2" size={20} />
+              </Button>
+            </a>
           </div>
         </div>
       </section>
