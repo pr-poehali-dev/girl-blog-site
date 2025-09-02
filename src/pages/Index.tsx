@@ -64,9 +64,23 @@ const Index = () => {
             </div>
             
             <nav className="hidden md:flex space-x-8">
+              <button
+                onClick={() => setActiveSection('home')}
+                className={`font-body transition-colors ${
+                  activeSection === 'home'
+                    ? 'text-instagram-pink font-semibold'
+                    : 'text-gray-600 hover:text-instagram-pink'
+                }`}
+              >
+                Главная
+              </button>
+              <a
+                href="/about"
+                className="font-body text-gray-600 hover:text-instagram-pink transition-colors"
+              >
+                Обо мне
+              </a>
               {[
-                { id: 'home', label: 'Главная' },
-                { id: 'about', label: 'Обо мне' },
                 { id: 'blog', label: 'Блог' },
                 { id: 'gallery', label: 'Фото' },
                 { id: 'contacts', label: 'Контакты' },
