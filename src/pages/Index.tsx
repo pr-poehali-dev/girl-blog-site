@@ -10,11 +10,12 @@ const Index = () => {
   const blogPosts = [
     {
       id: 1,
-      title: "Мой утренний ритуал красоты",
-      image: "/img/661a7668-4de7-4af6-bdad-296502e96e28.jpg",
+      title: "🌸 Мой утренний ритуал красоты",
+      image: "https://cdn.poehali.dev/files/b0643783-4f05-4cf6-9b5c-ea528204e0bb.png",
       excerpt: "Делюсь секретами идеального утра для сияющей кожи",
-      date: "2024-09-01",
-      category: "Beauty"
+      date: "2024-09-02",
+      category: "Beauty",
+      slug: "/blog/morning-beauty-ritual"
     },
     {
       id: 2,
@@ -165,42 +166,44 @@ const Index = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {blogPosts.map((post) => (
               <Card key={post.id} className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer group">
-                <div className="aspect-square overflow-hidden">
-                  <img 
-                    src={post.image} 
-                    alt={post.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <CardContent className="p-6">
-                  <div className="flex items-center justify-between mb-3">
-                    <Badge variant="secondary" className="bg-instagram-coral/10 text-instagram-coral">
-                      {post.category}
-                    </Badge>
-                    <span className="text-sm text-gray-500 font-body">
-                      {new Date(post.date).toLocaleDateString('ru')}
-                    </span>
+                <a href={post.slug} className="block">
+                  <div className="aspect-square overflow-hidden">
+                    <img 
+                      src={post.image} 
+                      alt={post.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
                   </div>
-                  <h3 className="text-xl font-heading font-semibold text-gray-900 mb-2">
-                    {post.title}
-                  </h3>
-                  <p className="text-gray-600 font-body text-sm">
-                    {post.excerpt}
-                  </p>
-                  <div className="flex items-center mt-4 space-x-4 text-gray-500">
-                    <button className="flex items-center space-x-1 hover:text-instagram-pink transition-colors">
-                      <Icon name="Heart" size={16} />
-                      <span className="text-sm">42</span>
-                    </button>
-                    <button className="flex items-center space-x-1 hover:text-instagram-pink transition-colors">
-                      <Icon name="MessageCircle" size={16} />
-                      <span className="text-sm">8</span>
-                    </button>
-                    <button className="flex items-center space-x-1 hover:text-instagram-pink transition-colors">
-                      <Icon name="Share" size={16} />
-                    </button>
-                  </div>
-                </CardContent>
+                  <CardContent className="p-6">
+                    <div className="flex items-center justify-between mb-3">
+                      <Badge variant="secondary" className="bg-instagram-coral/10 text-instagram-coral">
+                        {post.category}
+                      </Badge>
+                      <span className="text-sm text-gray-500 font-body">
+                        {new Date(post.date).toLocaleDateString('ru')}
+                      </span>
+                    </div>
+                    <h3 className="text-xl font-heading font-semibold text-gray-900 mb-2">
+                      {post.title}
+                    </h3>
+                    <p className="text-gray-600 font-body text-sm">
+                      {post.excerpt}
+                    </p>
+                    <div className="flex items-center mt-4 space-x-4 text-gray-500">
+                      <button className="flex items-center space-x-1 hover:text-instagram-pink transition-colors">
+                        <Icon name="Heart" size={16} />
+                        <span className="text-sm">127</span>
+                      </button>
+                      <button className="flex items-center space-x-1 hover:text-instagram-pink transition-colors">
+                        <Icon name="MessageCircle" size={16} />
+                        <span className="text-sm">23</span>
+                      </button>
+                      <button className="flex items-center space-x-1 hover:text-instagram-pink transition-colors">
+                        <Icon name="Share" size={16} />
+                      </button>
+                    </div>
+                  </CardContent>
+                </a>
               </Card>
             ))}
           </div>
