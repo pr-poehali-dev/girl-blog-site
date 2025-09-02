@@ -49,9 +49,19 @@ const Index = () => {
       <header className="fixed top-0 w-full bg-white/90 backdrop-blur-md border-b border-gray-100 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <h1 className="text-2xl font-heading font-bold bg-gradient-to-r from-instagram-pink to-instagram-coral bg-clip-text text-transparent">
-              АДЕЛИНА АРДЕН
-            </h1>
+            <div className="flex items-center space-x-3">
+              <div className="relative">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-instagram-pink via-instagram-coral to-instagram-purple flex items-center justify-center">
+                  <span className="text-white font-heading font-bold text-lg">A</span>
+                </div>
+                <div className="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-br from-yellow-400 to-orange-400 rounded-full flex items-center justify-center">
+                  <span className="text-white text-xs">✨</span>
+                </div>
+              </div>
+              <h1 className="text-2xl font-heading font-bold bg-gradient-to-r from-instagram-pink to-instagram-coral bg-clip-text text-transparent">
+                АДЕЛИНА АРДЕН
+              </h1>
+            </div>
             
             <nav className="hidden md:flex space-x-8">
               {[
