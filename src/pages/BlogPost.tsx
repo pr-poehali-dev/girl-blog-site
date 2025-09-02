@@ -90,7 +90,7 @@ const BlogPost = () => {
                 <img 
                   src="https://cdn.poehali.dev/files/b0643783-4f05-4cf6-9b5c-ea528204e0bb.png" 
                   alt="Мой утренний ритуал красоты" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
             </div>
