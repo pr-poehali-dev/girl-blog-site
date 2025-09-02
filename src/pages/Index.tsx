@@ -50,7 +50,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <h1 className="text-2xl font-heading font-bold bg-gradient-to-r from-instagram-pink to-instagram-coral bg-clip-text text-transparent">
-              АННА БЛОГ
+              АДЕЛИНА АРДЕН
             </h1>
             
             <nav className="hidden md:flex space-x-8">
@@ -95,8 +95,8 @@ const Index = () => {
             <div className="mb-8 relative">
               <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-white shadow-xl">
                 <img 
-                  src="/img/661a7668-4de7-4af6-bdad-296502e96e28.jpg" 
-                  alt="Анна" 
+                  src="https://cdn.poehali.dev/files/524dbb6a-f836-449e-b936-e0fa4d6cd94c.png" 
+                  alt="Аделина Арден" 
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -106,7 +106,7 @@ const Index = () => {
             </div>
             
             <h1 className="text-5xl font-heading font-bold text-gray-900 mb-4">
-              Привет! Я <span className="bg-gradient-to-r from-instagram-pink to-instagram-coral bg-clip-text text-transparent">Анна</span>
+              Привет! Я <span className="bg-gradient-to-r from-instagram-pink to-instagram-coral bg-clip-text text-transparent">Аделина</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 font-body max-w-2xl mx-auto">
               Делюсь своей жизнью, модными находками и секретами красоты. 
@@ -234,7 +234,7 @@ const Index = () => {
                 </h2>
                 <div className="space-y-4 font-body text-gray-600">
                   <p>
-                    Привет! Меня зовут Анна, и я создаю контент о красоте, моде и стиле жизни уже более 3 лет. 
+                    Привет! Меня зовут Аделина Арден, и я создаю контент о красоте, моде и стиле жизни уже более 3 лет. 
                     Моя миссия — вдохновлять девушек быть собой и находить красоту в повседневности.
                   </p>
                   <p>
