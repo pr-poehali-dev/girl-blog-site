@@ -247,73 +247,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div>
-                <h2 className="text-3xl font-heading font-bold text-gray-900 mb-6">
-                  ✨ Привет! Я — Аделина Арден
-                </h2>
-                <div className="space-y-4 font-body text-gray-600">
-                  <p className="text-lg leading-relaxed">
-                    Я создаю это пространство как свой личный дневник вдохновения.
-                  </p>
-                  <div className="space-y-3">
-                    <p className="flex items-center space-x-2">
-                      <span>☕</span>
-                      <span>Утро для меня начинается с кофе и мягкого света из окна.</span>
-                    </p>
-                    <p className="flex items-center space-x-2">
-                      <span>📚</span>
-                      <span>Вечером люблю читать, писать и ловить атмосферу спокойствия.</span>
-                    </p>
-                    <p className="flex items-center space-x-2">
-                      <span>💄</span>
-                      <span>Моё вдохновение — в моде, красоте, уходовых ритуалах и маленьких деталях, которые делают жизнь уютнее.</span>
-                    </p>
-                  </div>
-                  <p className="text-lg font-medium text-gray-800 py-4 border-l-4 border-instagram-pink pl-4 bg-gradient-to-r from-pink-50 to-transparent">
-                    Я верю: счастье — в мелочах. В запахе свежих цветов, в тепле пледа, в улыбке, подаренной случайно.
-                  </p>
-                  <p className="text-lg text-gray-700 font-medium">
-                    <span className="text-instagram-pink">Добро пожаловать в мой мир</span> 🌙 Здесь будет нежность, стиль и немного магии момента.
-                  </p>
-                </div>
 
-                <div className="flex flex-wrap gap-2 mt-6">
-                  {['Fashion', 'Beauty', 'Lifestyle', 'Travel', 'Self-care'].map((tag) => (
-                    <Badge key={tag} variant="outline" className="border-instagram-coral text-instagram-coral">
-                      {tag}
-                    </Badge>
-                  ))}
-                </div>
-
-                <div className="flex space-x-4 mt-8">
-                  <Button className="bg-gradient-to-r from-instagram-pink to-instagram-coral hover:opacity-90">
-                    <Icon name="Mail" className="mr-2" size={20} />
-                    Написать мне
-                  </Button>
-                  <Button variant="outline" className="border-instagram-blue text-instagram-blue hover:bg-instagram-blue hover:text-white">
-                    Скачать медиакит
-                  </Button>
-                </div>
-              </div>
-
-              <div className="flex justify-center">
-                <div className="w-80 h-96 rounded-2xl overflow-hidden shadow-2xl">
-                  <img 
-                    src="https://cdn.poehali.dev/files/3322f803-e723-499e-84ff-4c3dc12bd9e4.png" 
-                    alt="Аделина Арден" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
